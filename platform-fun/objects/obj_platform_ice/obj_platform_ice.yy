@@ -1,10 +1,16 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_platform_ice",
+    "path": "sprites/spr_platform_ice/spr_platform_ice.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_abs_platform",
+    "path": "objects/obj_abs_platform/obj_abs_platform.yy",
+  },
   "physicsObject": true,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -15,7 +21,7 @@
   "physicsAngularDamping": 0.1,
   "physicsFriction": 0.2,
   "physicsStartAwake": true,
-  "physicsKinematic": true,
+  "physicsKinematic": false,
   "physicsShapePoints": [
     {"x":0.0,"y":0.0,},
     {"x":256.0,"y":0.0,},
@@ -28,11 +34,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "abstract",
-    "path": "folders/Objects/abstract.yy",
+    "name": "platforms",
+    "path": "folders/Objects/platforms.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_abs_platform",
+  "name": "obj_platform_ice",
   "tags": [],
   "resourceType": "GMObject",
 }

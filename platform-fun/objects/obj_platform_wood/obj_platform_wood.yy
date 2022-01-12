@@ -1,10 +1,16 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_platform_wood",
+    "path": "sprites/spr_platform_wood/spr_platform_wood.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_abs_platform",
+    "path": "objects/obj_abs_platform/obj_abs_platform.yy",
+  },
   "physicsObject": true,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -22,17 +28,15 @@
     {"x":256.0,"y":64.0,},
     {"x":0.0,"y":64.0,},
   ],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "abstract",
-    "path": "folders/Objects/abstract.yy",
+    "name": "platforms",
+    "path": "folders/Objects/platforms.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_abs_platform",
+  "name": "obj_platform_wood",
   "tags": [],
   "resourceType": "GMObject",
 }

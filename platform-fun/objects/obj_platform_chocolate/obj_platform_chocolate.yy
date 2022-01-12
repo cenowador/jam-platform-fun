@@ -1,10 +1,16 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_platform_chocolate",
+    "path": "sprites/spr_platform_chocolate/spr_platform_chocolate.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_abs_platform",
+    "path": "objects/obj_abs_platform/obj_abs_platform.yy",
+  },
   "physicsObject": true,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -28,11 +34,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "abstract",
-    "path": "folders/Objects/abstract.yy",
+    "name": "platforms",
+    "path": "folders/Objects/platforms.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_abs_platform",
+  "name": "obj_platform_chocolate",
   "tags": [],
   "resourceType": "GMObject",
 }
