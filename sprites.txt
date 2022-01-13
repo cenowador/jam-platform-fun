@@ -13,7 +13,8 @@ itens:
 1 filhote de gato
 1 filhote de panda
 1 cesta que fica na cabeça do palhaço
-corta
+corda
+palanque palhaço
 
 menu:
 botão de pause
