@@ -1,5 +1,11 @@
 /// @description movement
 
+//check if out of screen
+if(x > room_width+300 || x < -300 || y > room_height+300 || y < -300){
+	player_died();
+	exit;
+}
+
 //check if on ground
 var onGround = instance_place(x, y+1, obj_abs_platform);
 with(onGround){

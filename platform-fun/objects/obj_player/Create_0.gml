@@ -12,3 +12,6 @@ physics_movement_impulse = physics_movement_impulse_default;
 //clown animation
 clown_subimg = 0;
 clown_image_number = sprite_get_number(spr_player_clown);
+
+//set camera
+global.camera.target = id;
