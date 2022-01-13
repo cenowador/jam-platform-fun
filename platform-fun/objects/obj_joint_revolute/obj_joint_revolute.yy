@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_joint_revolute",
+    "path": "sprites/spr_joint_revolute/spr_joint_revolute.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
@@ -15,25 +18,24 @@
   "physicsAngularDamping": 0.1,
   "physicsFriction": 0.2,
   "physicsStartAwake": true,
-  "physicsKinematic": true,
+  "physicsKinematic": false,
   "physicsShapePoints": [
     {"x":0.0,"y":0.0,},
-    {"x":256.0,"y":0.0,},
-    {"x":256.0,"y":64.0,},
-    {"x":0.0,"y":64.0,},
+    {"x":16.0,"y":0.0,},
+    {"x":16.0,"y":16.0,},
+    {"x":0.0,"y":16.0,},
   ],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "abstract",
-    "path": "folders/Objects/abstract.yy",
+    "name": "joints",
+    "path": "folders/Objects/joints.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_abs_platform",
+  "name": "obj_joint_revolute",
   "tags": [],
   "resourceType": "GMObject",
 }

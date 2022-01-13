@@ -1,3 +1,5 @@
 /// @description Insert description here
 
-onCollisionWithPlayer();
+with(obj_player){
+	
+}
