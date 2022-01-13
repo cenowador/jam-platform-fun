@@ -30,3 +30,14 @@ keyboard_check_pressed(vk_up) ||
 keyboard_check_pressed(ord("W")))){
 	physics_apply_force(x, y, 0, -physics_jump_impulse);
 }
+//clown animation
+if(abs(phy_speed_x) >= 0.5){
+	var inc = (clown_image_number/room_speed);
+	if(dir != 0)
+		inc *= dir;
+	clown_subimg += inc;
+	if(clown_subimg > clown_image_number-1)
+		clown_subimg = 0;
+	else if(clown_subimg < 0)
+		clown_subimg = clown_image_number-1;
+}
