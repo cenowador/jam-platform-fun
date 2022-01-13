@@ -1,0 +1,1 @@
+self_moving_y = true;
