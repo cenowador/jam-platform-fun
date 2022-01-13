@@ -2,7 +2,7 @@
 
 //check if out of screen
 if(x > room_width+300 || x < -300 || y > room_height+300 || y < -300){
-	player_died();
+	level_failed();
 	exit;
 }
 

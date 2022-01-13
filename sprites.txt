@@ -1,13 +1,13 @@
 plataformas:
-chão de chocolate (tileset 32px de altura)
-chão de doce listrado (tileset 32px de altura)
-chão de sabão/espuma (tileset 32px de altura)
-chão de trampolim (tileset 32px de altura)
-chão de doce listrado de outra cor (tileset 32px de altura)
-chão de doce listrado de uma terceira cor (tileset 32px de altura)
+chão de chocolate (tileset 32px de altura) -
+chão de doce listrado (tileset 32px de altura) -
+chão de sabão/espuma (tileset 32px de altura) -
+chão de trampolim (tileset 32px de altura) -
+chão de doce listrado de outra cor (tileset 32px de altura) -
+chão de doce listrado de uma terceira cor (tileset 32px de altura) -
 
 itens:
-1 pipoca (não é um saco de pipoca) (32x32)
+1 pipoca (não é um saco de pipoca) (32x32) -
 1 bigorna (128x64)
 1 filhote de cachorro
 1 filhote de gato
