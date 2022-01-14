@@ -16,10 +16,10 @@ itens:
 corda
 palanque palhaço
 
-menu:
+gui:
 botão de pause
 botão de play
 botão de reset
-estrela
 retrato do palhaço
 contorno da interface (1280x720)
+cursor (32x32)

@@ -1,10 +1,17 @@
 /// @description variables
 
+//macros
+#macro color_red "#f02837"
+
+//add fonts
+scribble_font_add("fnt_dotty32");
+
+//global variables
 global.camera = instance_create_depth(0, 0, depth, obj_camera);
 
 //level data
-levels_stats = ds_map_create(); //["rm_name"]{panda:bool, kitten:bool, puppy:bool, time:int, deaths: int}
-total_deaths = 0;
+levels_stats = ds_map_create(); //["rm_num"]{panda:bool, kitten:bool, puppy:bool, time:int, deaths: int}
+total_failures = 0;
 
 //level control
 enum babies{
