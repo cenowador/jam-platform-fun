@@ -21,6 +21,7 @@
     {"id":{"name":"rm_level_1","path":"rooms/rm_level_1/rm_level_1.yy",},"order":0,},
     {"id":{"name":"rm_level_completed","path":"rooms/rm_level_completed/rm_level_completed.yy",},"order":4,},
     {"id":{"name":"twerk_transitions_kernels_wipe","path":"scripts/twerk_transitions_kernels_wipe/twerk_transitions_kernels_wipe.yy",},"order":8,},
+    {"id":{"name":"spr_level_bg","path":"sprites/spr_level_bg/spr_level_bg.yy",},"order":1,},
     {"id":{"name":"__GMTWERK_CONFIG__","path":"scripts/__GMTWERK_CONFIG__/__GMTWERK_CONFIG__.yy",},"order":0,},
     {"id":{"name":"__scribble_config_default_template","path":"scripts/__scribble_config_default_template/__scribble_config_default_template.yy",},"order":1,},
     {"id":{"name":"spr_platform_wood","path":"sprites/spr_platform_wood/spr_platform_wood.yy",},"order":3,},
