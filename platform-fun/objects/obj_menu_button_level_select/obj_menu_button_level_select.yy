@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_menu_return",
-    "path": "sprites/spr_menu_return/spr_menu_return.yy",
+    "name": "spr_menu_level_select",
+    "path": "sprites/spr_menu_level_select/spr_menu_level_select.yy",
   },
   "solid": false,
   "visible": true,
@@ -33,7 +33,7 @@
     "path": "folders/Objects/menus.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_menu_return",
+  "name": "obj_menu_button_level_select",
   "tags": [],
   "resourceType": "GMObject",
 }

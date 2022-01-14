@@ -33,7 +33,7 @@
     "path": "folders/Objects/menus.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_menu_credits",
+  "name": "obj_menu_button_credits",
   "tags": [],
   "resourceType": "GMObject",
 }
