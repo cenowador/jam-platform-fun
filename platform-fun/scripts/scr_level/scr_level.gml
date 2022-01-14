@@ -9,6 +9,7 @@ function level_end(){
 			failures: level_failures
 		}
 		ds_map_set(levels_stats, num, stats);
+		level_started = false;
 	}
 	room_change(rm_level_completed);
 }
@@ -27,7 +28,7 @@ function level_failed(){
 	with(obj_control){
 		level_failures += 1;
 		total_failures += 1;
-		
+		level_reset_stats(false, false);
 	}
 	room_restart();
 }

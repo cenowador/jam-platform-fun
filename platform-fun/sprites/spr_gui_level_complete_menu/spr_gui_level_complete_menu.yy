@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "level_complete",
-    "path": "folders/Sprites/gui/level_complete.yy",
+    "path": "folders/Sprites/levels/level_complete.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_gui_level_complete_menu",

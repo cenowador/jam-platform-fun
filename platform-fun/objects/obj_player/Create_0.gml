@@ -15,3 +15,8 @@ clown_image_number = sprite_get_number(spr_player_clown);
 
 //set camera
 global.camera.target = id;
+
+//mark level as started
+with(obj_control){
+	level_started = true;
+}
