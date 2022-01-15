@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_menu_settings",
-    "path": "sprites/spr_menu_settings/spr_menu_settings.yy",
+    "name": "spr_gui_button",
+    "path": "sprites/spr_gui_button/spr_gui_button.yy",
   },
   "solid": false,
   "visible": true,
@@ -25,6 +25,7 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],

@@ -24,8 +24,9 @@ plat_small_h = sprite_get_height(spr_gui_platform_small);
 spawning = noone;
 spawn_radius = 175;
 spawn_angle = 0;
-spawn_timer_max = 1*room_speed;
+spawn_timer_max = 1;
 spawn_timer_current = 0;
+device_inside_spawn = false;
 spawns = {
 	anvil: 0,
 	plat_medium: 1,
@@ -53,21 +54,17 @@ spawnCancel = function(){
 spawnFinish = function(){
 	if(spawning == spawns.anvil){
 		with(instance_create_layer(global.device_x, global.device_y, "Instances", obj_prop_anvil)){
-			phy_rotation = other.spawn_angle;	
+			phy_rotation = -other.spawn_angle;
 		}
 	}
 	else if(spawning == spawns.plat_medium){
-		with(instance_create_layer(global.device_x, global.device_y, "Instances", obj_platform_wood)){
-			phy_rotation = other.spawn_angle;
-			image_xscale = other.platform_medium_xscale;
-			image_yscale = other.platform_medium_yscale;
+		with(instance_create_layer(global.device_x, global.device_y, "Instances", obj_platform_wood_medium)){
+			phy_rotation = -other.spawn_angle;
 		}
 	}
 	else if(spawning == spawns.plat_small){
-		with(instance_create_layer(global.device_x, global.device_y, "Instances", obj_platform_wood)){
-			phy_rotation = other.spawn_angle;	
-			image_xscale = other.platform_small_xscale;
-			image_yscale = other.platform_small_yscale;
+		with(instance_create_layer(global.device_x, global.device_y, "Instances", obj_platform_wood_small)){
+			phy_rotation = -other.spawn_angle;
 		}
 	}
 	spawnCancel();

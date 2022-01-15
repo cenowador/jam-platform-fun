@@ -20,4 +20,8 @@ if(spawning != noone){
 	else if(spawning == spawns.plat_small){
 		draw_sprite_ext(spr_gui_platform_small_spawn, 0, global.device_x, global.device_y, platform_small_xscale, platform_small_yscale, spawn_angle, c_white, 1);
 	}
+	//cannot spawn
+	if(!device_inside_spawn){
+		
+	}
 }
