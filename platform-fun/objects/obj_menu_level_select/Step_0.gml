@@ -1,6 +1,6 @@
 /// @description get clicks
 
-if(global.mouse_left_clicked){
+if(global.device_left_pressed){
 	var it = 0;
 	for(var i = 0; i < level_amount_h; ++i){
 		for(var j = 0; j < level_amount_w; ++j){
@@ -8,10 +8,10 @@ if(global.mouse_left_clicked){
 			var bx = level_button_x+(level_button_margin_w+level_button_w)*j;
 			var by = level_button_y+(level_button_margin_h+level_button_h)*i;
 
-			if(mouse_x >= bx-level_button_w/2 &&
-			mouse_x <= bx+level_button_w/2 &&
-			mouse_y >= by-level_button_h/2 &&
-			mouse_y <= by+level_button_h/2){
+			if(global.device_x >= bx-level_button_w/2 &&
+			global.device_x <= bx+level_button_w/2 &&
+			global.device_y >= by-level_button_h/2 &&
+			global.device_y <= by+level_button_h/2){
 				with(obj_control){
 					level_reset_stats();
 					var rm_id = asset_get_index("rm_level_"+string(it));

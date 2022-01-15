@@ -25,7 +25,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "GMTwerk2",
-    "path": "folders/GMTwerk/Libraries/GMTwerk2.yy",
+    "path": "folders/Extensions/GMTwerk/Libraries/GMTwerk2.yy",
   },
   "resourceVersion": "1.0",
   "name": "__gmtwerk_host__",

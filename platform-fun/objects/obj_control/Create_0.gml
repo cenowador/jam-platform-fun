@@ -8,7 +8,9 @@ scribble_font_add("fnt_dotty32");
 
 //global variables
 global.camera = instance_create_depth(0, 0, depth, obj_camera);
-global.mouse_left_clicked = false;
+global.device_left_pressed = false;
+global.device_x = 0;
+global.device_y = 0;
 global.save_location = "save";
 
 

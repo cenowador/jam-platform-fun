@@ -30,11 +30,21 @@ else{
 		stopped();	
 	}
 }
-//jumping
-if(onGround != noone && (keyboard_check_pressed(vk_space) ||
-keyboard_check_pressed(vk_up) ||
-keyboard_check_pressed(ord("W")))){
-	physics_apply_force(x, y, 0, -physics_jump_impulse);
+
+//check if spawning something
+var spawn = false;
+with(obj_abs_level){
+	spawn = (spawning != noone);
+}
+
+//only jump if not spawning
+if(!spawn){
+	//jumping
+	if(onGround != noone && (keyboard_check_pressed(vk_space) ||
+	keyboard_check_pressed(vk_up) ||
+	keyboard_check_pressed(ord("W")))){
+		physics_apply_force(x, y, 0, -physics_jump_impulse);
+	}
 }
 //clown animation
 if(abs(phy_speed_x) >= 0.5){

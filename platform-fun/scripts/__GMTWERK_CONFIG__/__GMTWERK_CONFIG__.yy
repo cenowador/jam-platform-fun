@@ -3,7 +3,7 @@
   "isCompatibility": false,
   "parent": {
     "name": "GMTwerk2",
-    "path": "folders/GMTwerk/Libraries_config/GMTwerk2.yy",
+    "path": "folders/Extensions/GMTwerk/Libraries_config/GMTwerk2.yy",
   },
   "resourceVersion": "1.0",
   "name": "__GMTWERK_CONFIG__",
