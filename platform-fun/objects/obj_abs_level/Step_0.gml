@@ -17,9 +17,9 @@ var platSmallHover = (global.device_x >= plat_small_x-plat_small_w/2 &&
 if(spawning != noone){
 	//counts spawn time
 	with(obj_player){
-		other.device_inside_spawn = point_in_circle(global.device_x, global.device_y, x, y, other.spawn_radius);
+		other.spawn_device_inside = point_in_circle(global.device_x, global.device_y, x, y, other.spawn_radius);
 	}
-	if(global.device_left_down && device_inside_spawn){
+	if(global.device_left_down && spawn_device_inside){
 		spawn_timer_current += 1;
 		if(spawn_timer_current >= spawn_timer_max){
 			spawnFinish();

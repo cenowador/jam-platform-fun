@@ -1,5 +1,6 @@
 /// @description Insert description here
 
+phy_bullet = true;
 angular_damping = 3;
 linear_damping = 3;
 movement_impulse = 750;
@@ -16,3 +17,5 @@ self_moving_y_down = true;
 
 stopped = function(){}
 onCollisionWithPlayer = function(){}
+onCollisionWithPlatform = function(){}
+onCollisionWithProp = function(){}

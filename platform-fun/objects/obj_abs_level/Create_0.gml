@@ -26,7 +26,8 @@ spawn_radius = 175;
 spawn_angle = 0;
 spawn_timer_max = 1;
 spawn_timer_current = 0;
-device_inside_spawn = false;
+spawn_device_inside = false;
+spawn_overlapping = noone;
 spawns = {
 	anvil: 0,
 	plat_medium: 1,
