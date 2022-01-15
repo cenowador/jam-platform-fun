@@ -2,6 +2,16 @@
 
 //draw bg
 draw_self();
+
+//draw game saved text
+if(saved_alpha > 0){
+	draw_set_font(fnt_dotty22);
+	draw_set_color(c_black);
+	draw_set_halign(fa_left);
+	draw_set_alpha(saved_alpha);
+	draw_text(10, view_hport[0]-40, "JOGO SALVO");
+	draw_set_alpha(1);
+}
 	
 //draw buttons
 draw_sprite(spr_gui_level_complete_next, 0, button_next_level_x, button_next_level_y);

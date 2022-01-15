@@ -14,6 +14,7 @@ function level_end(){
 		}
 		level_started = false;
 	}
+	save_game();
 	room_change(rm_level_completed);
 }
 

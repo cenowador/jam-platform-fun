@@ -9,6 +9,7 @@ scribble_font_add("fnt_dotty32");
 //global variables
 global.camera = instance_create_depth(0, 0, depth, obj_camera);
 global.mouse_left_clicked = false;
+global.save_location = "save";
 
 
 //level data
@@ -37,3 +38,6 @@ level_reset_stats = function(reset_timer=true, reset_failures=true){
 	if(reset_failures)
 		level_failures = 0;
 }
+
+//check if there is a game saved
+load_game();

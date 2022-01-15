@@ -1,5 +1,9 @@
 /// @description get clicks
 
+if(saved_alpha_reduce){
+	saved_alpha = clamp(saved_alpha-(1/(1*room_speed)), 0, 1);	
+}
+
 var hoveringMenu = (mouse_x >= button_menu_x-button_menu_w/2 &&
 mouse_x <= button_menu_x+button_menu_w/2 &&
 mouse_y >= button_menu_y-button_menu_h/2 &&

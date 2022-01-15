@@ -9,3 +9,8 @@ button_menu_x = x-75;
 button_menu_y = button_next_level_y;
 button_menu_w = sprite_get_width(spr_gui_level_complete_menu);
 button_menu_h = sprite_get_height(spr_gui_level_complete_menu);
+
+//game saved text alpha
+saved_alpha = 1;
+saved_alpha_reduce = false;
+alarm[0] = 2*room_speed;
