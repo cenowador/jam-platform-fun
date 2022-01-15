@@ -1,9 +1,10 @@
 /// @description draw interface
 
+var hoverAmt = 0.05;
 draw_sprite(spr_gui_overlay, 0, view_wport[0]/2, view_hport[0]/2);
-draw_sprite(spr_gui_anvil, 0, anvil_x, anvil_y);
-draw_sprite(spr_gui_platform_medium, 0, plat_medium_x, plat_medium_y);
-draw_sprite(spr_gui_platform_small, 0, plat_small_x, plat_small_y);
+draw_sprite_ext(spr_gui_anvil, 0, anvil_x, anvil_y, 1, 1-hoverAmt*anvil_hover, 0, c_white, 1);
+draw_sprite_ext(spr_gui_platform_medium, 0, plat_medium_x, plat_medium_y, 1, 1-hoverAmt*plat_medium_hover, 0, c_white, 1);
+draw_sprite_ext(spr_gui_platform_small, 0, plat_small_x, plat_small_y, 1, 1-hoverAmt*plat_small_hover, 0, c_white, 1);
 
 if(spawning != noone){
 	//draw spawn radius
@@ -22,6 +23,6 @@ if(spawning != noone){
 	}
 	//cannot spawn
 	if(!spawn_device_inside){
-		
+		draw_sprite_ext(spr_gui_negate, 0, global.device_x, global.device_y, 1, 1, 0, c_white, 1);	
 	}
 }

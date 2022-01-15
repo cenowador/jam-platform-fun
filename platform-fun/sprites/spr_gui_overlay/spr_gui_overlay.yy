@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"2286e1e9-39a7-4083-ab4e-5a511fa68970","path":"sprites/spr_gui_overlay/spr_gui_overlay.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"2286e1e9-39a7-4083-ab4e-5a511fa68970","path":"sprites/spr_gui_overlay/spr_gui_overlay.yy",},"LayerId":{"name":"6a705213-fd85-4032-9c8d-a9a252a20aac","path":"sprites/spr_gui_overlay/spr_gui_overlay.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_gui_overlay","path":"sprites/spr_gui_overlay/spr_gui_overlay.yy",},"resourceVersion":"1.0","name":"2286e1e9-39a7-4083-ab4e-5a511fa68970","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"41d90ecf-3587-4af4-b0f3-f1920ca45f88","path":"sprites/spr_gui_overlay/spr_gui_overlay.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"41d90ecf-3587-4af4-b0f3-f1920ca45f88","path":"sprites/spr_gui_overlay/spr_gui_overlay.yy",},"LayerId":{"name":"35fe97dc-7fec-451f-9562-2f326d2809b7","path":"sprites/spr_gui_overlay/spr_gui_overlay.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_gui_overlay","path":"sprites/spr_gui_overlay/spr_gui_overlay.yy",},"resourceVersion":"1.0","name":"41d90ecf-3587-4af4-b0f3-f1920ca45f88","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_gui_overlay","path":"sprites/spr_gui_overlay/spr_gui_overlay.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"0780a653-3fa6-488d-b934-eb26d5a30148","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2286e1e9-39a7-4083-ab4e-5a511fa68970","path":"sprites/spr_gui_overlay/spr_gui_overlay.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"c5953e3b-3501-456f-a29b-39c2fa647614","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"41d90ecf-3587-4af4-b0f3-f1920ca45f88","path":"sprites/spr_gui_overlay/spr_gui_overlay.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -65,9 +65,33 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"6a705213-fd85-4032-9c8d-a9a252a20aac","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"35fe97dc-7fec-451f-9562-2f326d2809b7","tags":[],"resourceType":"GMImageLayer",},
   ],
-  "nineSlice": null,
+  "nineSlice": {
+    "left": 310,
+    "top": 31,
+    "right": 80,
+    "bottom": 10,
+    "guideColour": [
+      4294902015,
+      4294902015,
+      4294902015,
+      4294902015,
+    ],
+    "highlightColour": 1728023040,
+    "highlightStyle": 0,
+    "enabled": false,
+    "tileMode": [
+      0,
+      0,
+      0,
+      0,
+      0,
+    ],
+    "resourceVersion": "1.0",
+    "loadedVersion": null,
+    "resourceType": "GMNineSliceData",
+  },
   "parent": {
     "name": "gui",
     "path": "folders/Sprites/gui.yy",

@@ -1,14 +1,14 @@
 /// @description get interface clicks
 
-var anvilHover = (global.device_x >= anvil_x-anvil_w/2 &&
+anvil_hover = (global.device_x >= anvil_x-anvil_w/2 &&
 	global.device_x <= anvil_x+anvil_w/2 &&
 	global.device_y >= anvil_y-anvil_h/2 &&
 	global.device_y <= anvil_y+anvil_h/2);
-var platMedHover = (global.device_x >= plat_medium_x-plat_medium_w/2 &&
+plat_medium_hover = (global.device_x >= plat_medium_x-plat_medium_w/2 &&
 	global.device_x <= plat_medium_x+plat_medium_w/2 &&
 	global.device_y >= plat_medium_y-plat_medium_h/2 &&
 	global.device_y <= plat_medium_y+plat_medium_h/2);
-var platSmallHover = (global.device_x >= plat_small_x-plat_small_w/2 &&
+plat_small_hover = (global.device_x >= plat_small_x-plat_small_w/2 &&
 	global.device_x <= plat_small_x+plat_small_w/2 &&
 	global.device_y >= plat_small_y-plat_small_h/2 &&
 	global.device_y <= plat_small_y+plat_small_h/2);
@@ -40,13 +40,13 @@ if(spawning != noone){
 	else{
 		var clickedSame = global.device_left_pressed;
 		if(spawning == spawns.anvil){
-			clickedSame = (clickedSame && anvilHover);
+			clickedSame = (clickedSame && anvil_hover);
 		}
 		else if(spawning == spawns.plat_medium){
-			clickedSame = (clickedSame && platMedHover);
+			clickedSame = (clickedSame && plat_medium_hover);
 		}
 		else if(spawning == spawns.plat_small){
-			clickedSame = (clickedSame && platSmallHover);
+			clickedSame = (clickedSame && plat_small_hover);
 		}
 		
 		if(clickedSame || mouse_check_button_pressed(mb_right) || keyboard_check_pressed(vk_escape)){
@@ -58,10 +58,10 @@ if(spawning != noone){
 
 //get clicks
 if(global.device_left_pressed){
-	if(anvilHover)
+	if(anvil_hover)
 		spawnAnvil();
-	else if(platMedHover)
+	else if(plat_medium_hover)
 		spawnPlatMedium();
-	else if(platSmallHover)
+	else if(plat_small_hover)
 		spawnPlatSmall();
 }
