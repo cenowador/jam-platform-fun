@@ -13,8 +13,15 @@ for(var i = 0; i < level_amount_h; ++i){
 		it += 1;
 		var bx = level_button_x+(level_button_margin_w+level_button_w)*j;
 		var by = level_button_y+(level_button_margin_h+level_button_h)*i;
-		draw_sprite(spr_menu_level_select_select_button, 0, bx, by);
-		draw_text(bx, by, it);
+		with(obj_control){
+			if(level_current >= it){
+				draw_sprite(spr_menu_level_select_select_button, 0, bx, by);
+				draw_text(bx, by, it);
+			}
+			else{
+				draw_sprite(spr_menu_level_select_select_button, 1, bx, by);
+			}
+		}
 	}
 }
 

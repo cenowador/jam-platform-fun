@@ -12,9 +12,12 @@ if(global.mouse_left_clicked){
 			mouse_x <= bx+level_button_w/2 &&
 			mouse_y >= by-level_button_h/2 &&
 			mouse_y <= by+level_button_h/2){
-				var rm_id = asset_get_index("rm_level_"+string(it));
-				if(room_exists(rm_id))
-					room_change(rm_id);
+				with(obj_control){
+					level_reset_stats();
+					var rm_id = asset_get_index("rm_level_"+string(it));
+					if(room_exists(rm_id))
+						room_change(rm_id);
+				}
 			}
 		}
 	}

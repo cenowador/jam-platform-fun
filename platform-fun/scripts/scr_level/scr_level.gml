@@ -9,6 +9,9 @@ function level_end(){
 			failures: level_failures
 		}
 		ds_map_set(levels_stats, num, stats);
+		if(num == level_current){
+			level_current += 1;
+		}
 		level_started = false;
 	}
 	room_change(rm_level_completed);
@@ -16,7 +19,6 @@ function level_end(){
 
 function level_next(){
 	with(obj_control){
-		level_current += 1;
 		level_reset_stats();
 		var rm_id = asset_get_index("rm_level_"+string(level_current));
 		if(room_exists(rm_id))

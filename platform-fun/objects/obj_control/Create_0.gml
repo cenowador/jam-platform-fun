@@ -27,6 +27,7 @@ level_panda_saved = false;
 level_time = 0;
 level_failures = 0;
 level_started = false;
+level_current = 1;
 level_reset_stats = function(reset_timer=true, reset_failures=true){
 	level_puppy_saved = false;
 	level_kitten_saved = false;
