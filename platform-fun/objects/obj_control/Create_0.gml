@@ -19,6 +19,9 @@ global.device_left_down = false;
 global.device_x = 0;
 global.device_y = 0;
 global.save_location = "save";
+global.options_music_on = true;
+global.options_sound_on = true;
+global.options_fullscreen = true;
 
 
 //level data
