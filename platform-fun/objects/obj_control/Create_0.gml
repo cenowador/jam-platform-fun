@@ -8,6 +8,7 @@
 scribble_font_add("fnt_dotty32");
 
 //global variables
+global.game_paused = false;
 global.camera = instance_create_depth(0, 0, depth, obj_camera);
 global.device_left_pressed = false;
 global.device_left_down = false;

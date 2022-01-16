@@ -1,5 +1,8 @@
 /// @description movement
 
+if(global.game_paused)
+	exit;
+
 //check if out of screen
 if(x > room_width+300 || x < -300 || y > room_height+300 || y < -300){
 	level_failed();
@@ -23,9 +26,15 @@ if(onGround == noone){
 	phy_linear_damping = physics_linear_damping_default;
 	phy_angular_damping = physics_angular_damping_default;
 	//change portrait
-	with(obj_abs_level){
-		portrait_index = portrait.jumping;
+	out_of_ground_timer += 1;
+	if(out_of_ground_timer >= out_of_ground_timer_thresh){
+		with(obj_abs_level){
+			portrait_index = portrait.jumping;
+		}
 	}
+}
+else{
+	out_of_ground_timer = 0;	
 }
 
 //movement

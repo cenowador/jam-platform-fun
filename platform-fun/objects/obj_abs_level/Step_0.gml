@@ -1,5 +1,31 @@
 /// @description get interface clicks
 
+button_play_hover = (global.device_x >= button_play_x-button_play_w/2 &&
+	global.device_x <= button_play_x+button_play_w/2 &&
+	global.device_y >= button_play_y-button_play_h/2 &&
+	global.device_y <= button_play_y+button_play_h/2);
+
+//check if paused
+if(global.device_left_pressed && button_play_hover){
+	global.game_paused = !global.game_paused;
+	//toggle physics
+	physics_pause_enable(global.game_paused);
+}
+
+if(global.game_paused){
+	exit;
+}
+	
+button_restart_hover = (global.device_x >= button_restart_x-button_restart_w/2 &&
+	global.device_x <= button_restart_x+button_restart_w/2 &&
+	global.device_y >= button_restart_y-button_restart_h/2 &&
+	global.device_y <= button_restart_y+button_restart_h/2);
+	
+button_menu_hover = (global.device_x >= button_menu_x-button_menu_w/2 &&
+	global.device_x <= button_menu_x+button_menu_w/2 &&
+	global.device_y >= button_menu_y-button_menu_h/2 &&
+	global.device_y <= button_menu_y+button_menu_h/2);
+	
 anvil_hover = (global.device_x >= anvil_x-anvil_w/2 &&
 	global.device_x <= anvil_x+anvil_w/2 &&
 	global.device_y >= anvil_y-anvil_h/2 &&
@@ -68,7 +94,11 @@ if(spawning != noone){
 
 //get clicks
 if(global.device_left_pressed){
-	if(anvil_hover)
+	if(button_menu_hover)
+		confirmMenu();
+	else if(button_restart_hover)
+		room_restart();
+	else if(anvil_hover)
 		spawnAnvil();
 	else if(plat_medium_hover)
 		spawnPlatMedium();

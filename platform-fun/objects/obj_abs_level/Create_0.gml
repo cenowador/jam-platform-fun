@@ -8,6 +8,26 @@ portrait = {
 }
 portrait_index = portrait.normal;
 
+button_play_x = 30;
+button_play_y = 250;
+button_play_w = sprite_get_width(spr_gui_button_play);
+button_play_h = sprite_get_height(spr_gui_button_play);
+button_play_hover = false;
+
+button_restart_x = 85;
+button_restart_y = 250;
+button_restart_w = sprite_get_width(spr_gui_button_play);
+button_restart_h = sprite_get_height(spr_gui_button_play);
+button_restart_hover = false;
+
+button_menu_x = 60;
+button_menu_y = 310;
+button_menu_xscale = 2;
+button_menu_yscale = 1.5;
+button_menu_w = sprite_get_width(spr_gui_button)*button_menu_xscale;
+button_menu_h = sprite_get_height(spr_gui_button)*button_menu_yscale;
+button_menu_hover = false;
+
 platform_medium_xscale = 4;
 platform_medium_yscale = 0.5;
 platform_medium_width = sprite_get_width(spr_gui_platform_medium_spawn)*platform_medium_xscale;
@@ -19,7 +39,7 @@ platform_small_width = sprite_get_width(spr_gui_platform_medium_spawn)*platform_
 platform_small_height = sprite_get_height(spr_gui_platform_medium_spawn)*platform_small_yscale;
 
 anvil_x = 60;
-anvil_y = 375;
+anvil_y = 400;
 anvil_w = sprite_get_width(spr_gui_anvil);
 anvil_h = sprite_get_height(spr_gui_anvil);
 anvil_hover = false;
@@ -31,7 +51,7 @@ plat_medium_h = sprite_get_height(spr_gui_platform_medium);
 plat_medium_hover = false;
 
 plat_small_x = 60;
-plat_small_y = 575;
+plat_small_y = 550;
 plat_small_w = sprite_get_width(spr_gui_platform_small);
 plat_small_h = sprite_get_height(spr_gui_platform_small);
 plat_small_hover = false;
@@ -137,4 +157,8 @@ spawnFinish = function(){
 		}
 	}
 	spawnCancel();
+}
+
+confirmMenu = function(){
+	
 }
