@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_platform_spring",
-    "path": "sprites/spr_platform_spring/spr_platform_spring.yy",
+    "name": "spr_platform_ice",
+    "path": "sprites/spr_platform_ice/spr_platform_ice.yy",
   },
   "solid": false,
   "visible": true,
@@ -15,8 +15,8 @@
   "physicsSensor": false,
   "physicsShape": 1,
   "physicsGroup": 1,
-  "physicsDensity": 1.0,
-  "physicsRestitution": 3.0,
+  "physicsDensity": 0.0,
+  "physicsRestitution": 0.1,
   "physicsLinearDamping": 0.1,
   "physicsAngularDamping": 0.1,
   "physicsFriction": 0.2,
@@ -28,15 +28,17 @@
     {"x":32.0,"y":32.0,},
     {"x":0.0,"y":32.0,},
   ],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "platforms",
-    "path": "folders/Objects/platforms.yy",
+    "name": "fixed",
+    "path": "folders/Objects/platforms/fixed.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_platform_spring",
+  "name": "obj_platform_ice_fixed",
   "tags": [],
   "resourceType": "GMObject",
 }

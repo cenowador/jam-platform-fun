@@ -118,16 +118,16 @@ spawnCancel = function(){
 
 spawnFinish = function(){
 	if(spawning == spawns.anvil){
-		with(instance_create_layer(global.device_x, global.device_y, "Instances", obj_prop_anvil)){
+		with(instance_create_depth(global.device_x, global.device_y, depth-1, obj_prop_anvil)){
 			phy_rotation = -other.spawn_angle;
 		}
 	}
 	else if(spawning == spawns.plat_medium){
-		with(instance_create_layer(global.device_x, global.device_y, "Instances", obj_platform_wood_medium)){
+		with(instance_create_depth(global.device_x, global.device_y, depth-1, obj_platform_wood_medium)){
 			phy_rotation = -other.spawn_angle;
 			image_angle = -phy_rotation;
 			if(other.spawn_joint_position != other.spawn_joint_positions.none){
-				if(physics_test_overlap(x, y, phy_rotation, obj_platform_wood)){
+				//if(physics_test_overlap(x, y, phy_rotation, obj_platform_wood)){
 					spawn_joint_position = other.spawn_joint_position;
 					with(instance_create_depth(other.spawn_joint_x, other.spawn_joint_y, depth-1, obj_joint_revolute)){
 						parent = other.id;
@@ -135,16 +135,16 @@ spawnFinish = function(){
 							instance_destroy();	
 						}
 					}
-				}
+				//}
 			}
 		}
 	}
 	else if(spawning == spawns.plat_small){
-		with(instance_create_layer(global.device_x, global.device_y, "Instances", obj_platform_wood_small)){
+		with(instance_create_depth(global.device_x, global.device_y, depth-1, obj_platform_wood_small)){
 			phy_rotation = -other.spawn_angle;
 			image_angle = -phy_rotation;
 			if(other.spawn_joint_position != other.spawn_joint_positions.none){
-				if(physics_test_overlap(x, y, phy_rotation, obj_platform_wood)){
+				//if(physics_test_overlap(x, y, phy_rotation, obj_platform_wood)){
 					spawn_joint_position = other.spawn_joint_position;
 					with(instance_create_depth(other.spawn_joint_x, other.spawn_joint_y, depth-1, obj_joint_revolute)){
 						parent = other.id;
@@ -152,7 +152,7 @@ spawnFinish = function(){
 							instance_destroy();	
 						}
 					}
-				}
+				//}
 			}
 		}
 	}

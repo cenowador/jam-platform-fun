@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_joint_rope",
-    "path": "sprites/spr_joint_rope/spr_joint_rope.yy",
+    "name": "spr_joint_prismatic",
+    "path": "sprites/spr_joint_prismatic/spr_joint_prismatic.yy",
   },
   "solid": false,
   "visible": true,
@@ -9,7 +9,7 @@
   "persistent": false,
   "parentObjectId": null,
   "physicsObject": true,
-  "physicsSensor": false,
+  "physicsSensor": true,
   "physicsShape": 1,
   "physicsGroup": 1,
   "physicsDensity": 0.0,
@@ -27,8 +27,7 @@
   ],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":2,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -37,7 +36,7 @@
     "path": "folders/Objects/joints.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_joint_rope",
+  "name": "obj_joint_prismatic",
   "tags": [],
   "resourceType": "GMObject",
 }

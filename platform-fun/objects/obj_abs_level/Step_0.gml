@@ -80,7 +80,7 @@ if(spawning != noone){
 	spawnCalculateJointPosition();
 	
 	//counts spawn time
-	if(global.device_left_down && spawn_device_inside){
+	if(global.device_left_pressed && spawn_device_inside){ //change to left down to keep timer
 		spawn_timer_current += 1;
 		if(spawn_timer_current >= spawn_timer_max){
 			spawnFinish();

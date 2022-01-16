@@ -6,7 +6,7 @@ weld = function(angle_min=0, angle_max=0, angle_limit=true){
 	if(parent != noone){
 		var cols = ds_list_create();
 		ds_list_clear(cols);
-		var num = instance_place_list(x, y, obj_platform_wood, cols, true);
+		var num = instance_place_list(x, y, obj_abs_platform, cols, true);
 		if(num >= 2){
 			//find parent id
 			var pid = ds_list_find_index(cols, parent);

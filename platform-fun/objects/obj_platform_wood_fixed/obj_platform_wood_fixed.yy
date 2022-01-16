@@ -32,8 +32,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "platforms",
-    "path": "folders/Objects/platforms.yy",
+    "name": "fixed",
+    "path": "folders/Objects/platforms/fixed.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_platform_wood_fixed",
