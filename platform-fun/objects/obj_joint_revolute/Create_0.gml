@@ -14,7 +14,7 @@ weld = function(angle_min=0, angle_max=0, angle_limit=true){
 				//find other platform id
 				var nid = pid+1;
 				var traversedAll = false;
-				while(is_undefined(cols[| nid])){
+				while(is_undefined(cols[| nid]) || (!is_undefined(cols[| nid]) && cols[| nid].object_index == obj_prop_popcorn)){
 					nid += 1;
 					if(nid >= num){
 						if(!traversedAll){

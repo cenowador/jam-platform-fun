@@ -35,7 +35,8 @@ function level_end(){
 function level_next(){
 	with(obj_control){
 		level_reset_stats();
-		var rm_id = asset_get_index("rm_level_"+string(level_current));
+		level_last_played += 1;
+		var rm_id = asset_get_index("rm_level_"+string(level_last_played));
 		if(room_exists(rm_id))
 			room_change(rm_id);
 	}

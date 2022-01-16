@@ -1,10 +1,10 @@
 /// @description variables
 
 image_xscale = 18.75;
-image_yscale = 14.06;
+image_yscale = 13;
 
 level_amount_w = 5;
-level_amount_h = 4;
+level_amount_h = 3;
 
 level_button_w = sprite_get_width(spr_menu_level_select_select_button);
 level_button_h = sprite_get_height(spr_menu_level_select_select_button);
@@ -38,8 +38,10 @@ playLevel = function(idx){
 	with(obj_control){
 		level_reset_stats();
 		var rm_id = asset_get_index("rm_level_"+string(idx));
-		if(room_exists(rm_id))
-			room_change(rm_id);
+		if(room_exists(rm_id)){
+			level_last_played = idx;
+			room_change(rm_id);	
+		}
 	}
 }
 

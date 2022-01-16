@@ -15,7 +15,7 @@
   "physicsSensor": false,
   "physicsShape": 0,
   "physicsGroup": 1,
-  "physicsDensity": 0.04,
+  "physicsDensity": 0.01,
   "physicsRestitution": 0.0,
   "physicsLinearDamping": 1.0,
   "physicsAngularDamping": 1.0,
@@ -28,6 +28,8 @@
   ],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],

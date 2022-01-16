@@ -1,5 +1,7 @@
 /// @description variables
 
+randomize();
+
 //macros
 #macro color_red "#f02837"
 #macro color_red_rgb make_color_rgb(240, 40, 55)
@@ -41,6 +43,7 @@ level_time = 0;
 level_failures = 0;
 level_started = false;
 level_current = 1;
+level_last_played = 1;
 level_reset_stats = function(reset_timer=true, reset_failures=true){
 	level_puppy_saved = false;
 	level_kitten_saved = false;

@@ -72,7 +72,7 @@ if(level_open > 0){
 	//draw time
 	var seconds = floor(stats.time/room_speed);
 	var minutes = floor(seconds/60);
-	var sseconds = string(seconds);
+	var sseconds = string(seconds-minutes*60);
 	var sminutes = string(minutes);
 	if(seconds < 10)
 		sseconds = "0"+sseconds;
