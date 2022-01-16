@@ -96,8 +96,9 @@ if(spawning != noone){
 if(global.device_left_pressed){
 	if(button_menu_hover)
 		confirmMenu();
-	else if(button_restart_hover)
-		room_restart();
+	else if(button_restart_hover){
+		level_failed();
+	}
 	else if(anvil_hover)
 		spawnAnvil();
 	else if(plat_medium_hover)
