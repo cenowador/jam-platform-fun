@@ -2,6 +2,9 @@
 
 platform_medium_xscale = 4;
 platform_medium_yscale = 0.5;
+platform_medium_width = sprite_get_width(spr_gui_platform_medium_spawn)*platform_medium_xscale;
+platform_medium_height = sprite_get_height(spr_gui_platform_medium_spawn)*platform_medium_yscale;
+
 platform_small_xscale = 2;
 platform_small_yscale = 0.5;
 
@@ -30,11 +33,16 @@ spawn_angle = 0;
 spawn_timer_max = 1;
 spawn_timer_current = 0;
 spawn_device_inside = false;
-spawn_overlapping = noone;
+spawn_joint_position = 0;
 spawns = {
 	anvil: 0,
 	plat_medium: 1,
 	plat_small: 2
+}
+spawn_joint_positions = {
+	left: 0,
+	right: 1,
+	none: 2
 }
 
 spawnAnvil = function(){

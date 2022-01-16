@@ -15,10 +15,19 @@ plat_small_hover = (global.device_x >= plat_small_x-plat_small_w/2 &&
 	
 //get spawn rotation
 if(spawning != noone){
-	//counts spawn time
+	//get if inside spawn radius
 	with(obj_player){
 		other.spawn_device_inside = point_in_circle(global.device_x, global.device_y, x, y, other.spawn_radius);
 	}
+	
+	//get if changing joint
+	if(keyboard_check_pressed(ord("J"))){
+		spawn_joint_position += 1;
+		if(spawn_joint_position > spawn_joint_positions.none)
+			spawn_joint_position = spawn_joint_positions.left;
+	}
+	
+	//counts spawn time
 	if(global.device_left_down && spawn_device_inside){
 		spawn_timer_current += 1;
 		if(spawn_timer_current >= spawn_timer_max){
