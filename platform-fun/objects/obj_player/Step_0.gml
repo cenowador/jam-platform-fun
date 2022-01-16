@@ -6,6 +6,11 @@ if(x > room_width+300 || x < -300 || y > room_height+300 || y < -300){
 	exit;
 }
 
+//change portrait
+with(obj_abs_level){
+	portrait_index = portrait.normal;
+}
+
 //check if on ground
 var onGround = instance_place(x, y+1, obj_abs_solid);
 with(onGround){
@@ -17,6 +22,10 @@ if(onGround == noone){
 	physics_movement_impulse = physics_movement_impulse_default;
 	phy_linear_damping = physics_linear_damping_default;
 	phy_angular_damping = physics_angular_damping_default;
+	//change portrait
+	with(obj_abs_level){
+		portrait_index = portrait.jumping;
+	}
 }
 
 //movement
@@ -45,6 +54,12 @@ if(!spawn){
 	keyboard_check_pressed(ord("W")))){
 		physics_apply_force(x, y, 0, -physics_jump_impulse);
 	}
+}
+else{
+	//change portrait
+	with(obj_abs_level){
+		portrait_index = portrait.thinking;
+	}	
 }
 //clown animation
 if(abs(phy_speed_x) >= 0.5){

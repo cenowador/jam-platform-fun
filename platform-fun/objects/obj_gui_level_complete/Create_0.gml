@@ -1,5 +1,8 @@
 /// @description Insert description here
 
+image_xscale = 16;
+image_yscale = 8;
+
 button_next_level_x = x+75;
 button_next_level_y = y+80;
 button_next_level_w = sprite_get_width(spr_gui_level_complete_next);

@@ -1,5 +1,13 @@
 /// @description variables
 
+//clown portrait
+portrait = {
+	normal: 0,
+	jumping: 1,
+	thinking: 2
+}
+portrait_index = portrait.normal;
+
 platform_medium_xscale = 4;
 platform_medium_yscale = 0.5;
 platform_medium_width = sprite_get_width(spr_gui_platform_medium_spawn)*platform_medium_xscale;

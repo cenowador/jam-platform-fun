@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_menu_level_select_select_bg",
-    "path": "sprites/spr_menu_level_select_select_bg/spr_menu_level_select_select_bg.yy",
+    "name": "spr_gui_button",
+    "path": "sprites/spr_gui_button/spr_gui_button.yy",
   },
   "solid": false,
   "visible": true,

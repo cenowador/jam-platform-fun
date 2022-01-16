@@ -1,7 +1,13 @@
 /// @description get clicks
 
+level_open_button_play_hover = (global.device_x >= level_open_button_play_x-level_open_button_play_w/2 &&
+			global.device_x <= level_open_button_play_x+level_open_button_play_w/2 &&
+			global.device_y >= level_open_button_play_y-level_open_button_play_h/2 &&
+			global.device_y <= level_open_button_play_y+level_open_button_play_h/2);
+			
 if(global.device_left_pressed){
 	var it = 0;
+	var broke = false;
 	for(var i = 0; i < level_amount_h; ++i){
 		for(var j = 0; j < level_amount_w; ++j){
 			it += 1;
@@ -12,13 +18,27 @@ if(global.device_left_pressed){
 			global.device_x <= bx+level_button_w/2 &&
 			global.device_y >= by-level_button_h/2 &&
 			global.device_y <= by+level_button_h/2){
+				var available = false;
 				with(obj_control){
-					level_reset_stats();
-					var rm_id = asset_get_index("rm_level_"+string(it));
-					if(room_exists(rm_id))
-						room_change(rm_id);
+					available = (it <= level_current);	
 				}
+				if(available){
+					openLevel(it);
+					exit;
+				}
+				broke = true;
+				break;
 			}
+		}
+		if(broke)
+			break;
+	}
+	
+	//check if started playing level
+	if(level_open > 0){
+		if(level_open_button_play_hover){
+			playLevel(level_open);
+			exit;
 		}
 	}
 }

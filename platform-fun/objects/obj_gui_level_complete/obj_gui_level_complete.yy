@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_gui_level_complete_bg",
-    "path": "sprites/spr_gui_level_complete_bg/spr_gui_level_complete_bg.yy",
+    "name": "spr_gui_button",
+    "path": "sprites/spr_gui_button/spr_gui_button.yy",
   },
   "solid": false,
   "visible": true,
