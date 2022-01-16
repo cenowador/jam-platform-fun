@@ -1,9 +1,7 @@
-/// @description Insert description here
+/// @description variables
 
-phy_bullet = true;
-angular_damping = 3;
-linear_damping = 3;
-movement_impulse = 750;
+//ingerit parent
+event_inherited();
 
 self_moving_x = false;
 self_moving_x_max_dist = 100;
@@ -14,8 +12,3 @@ self_moving_y = false;
 self_moving_y_max_dist = 100;
 self_moving_y_speed = 2;
 self_moving_y_down = true;
-
-stopped = function(){}
-onCollisionWithPlayer = function(){}
-onCollisionWithPlatform = function(){}
-onCollisionWithProp = function(){}

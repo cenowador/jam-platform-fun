@@ -8,7 +8,21 @@ function level_end(){
 			time: level_time,
 			failures: level_failures
 		}
-		ds_map_set(levels_stats, num, stats);
+		//keep best stats
+		var existing = levels_stats[? num];
+		if(!is_undefined(existing)){
+			if(existing.puppy)
+				stats.puppy = true;
+			if(existing.kitten)
+				stats.kitten = true;
+			if(existing.panda)
+				stats.panda = true;
+			if(existing.time < stats.time)
+				stats.time = existing.time;
+			if(existing.failures < stats.failures)
+				stats.failures = existing.failures;
+		}
+		levels_stats[? num] = stats;
 		if(num == level_current){
 			level_current += 1;
 		}

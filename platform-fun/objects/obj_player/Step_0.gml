@@ -7,7 +7,7 @@ if(x > room_width+300 || x < -300 || y > room_height+300 || y < -300){
 }
 
 //check if on ground
-var onGround = instance_place(x, y+1, obj_abs_platform);
+var onGround = instance_place(x, y+1, obj_abs_solid);
 with(onGround){
 	other.physics_movement_impulse = movement_impulse;
 	other.phy_angular_damping = angular_damping;

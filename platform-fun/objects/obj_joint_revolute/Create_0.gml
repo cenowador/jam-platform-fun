@@ -27,9 +27,10 @@ weld = function(angle_min=0, angle_max=0, angle_limit=true){
 						}
 					}
 				}
-				if(!abort)
+				if(!abort){
 					physics_joint_revolute_create(cols[| pid], cols[| nid], x, y, angle_min, angle_max, angle_limit, 
 					0, 0, false, false);
+				}
 			}
 			else abort = true;
 		}
