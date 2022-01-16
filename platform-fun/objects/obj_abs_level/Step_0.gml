@@ -27,18 +27,6 @@ if(spawning != noone){
 			spawn_joint_position = spawn_joint_positions.left;
 	}
 	
-	//counts spawn time
-	if(global.device_left_down && spawn_device_inside){
-		spawn_timer_current += 1;
-		if(spawn_timer_current >= spawn_timer_max){
-			spawnFinish();
-			exit;
-		}
-	}
-	else{
-		spawn_timer_current = 0;	
-	}
-	
 	if(mouse_wheel_up() || keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W"))){
 		spawn_angle += 15;	
 	}
@@ -62,6 +50,19 @@ if(spawning != noone){
 			spawnCancel();
 			exit;
 		}
+	}
+	spawnCalculateJointPosition();
+	
+	//counts spawn time
+	if(global.device_left_down && spawn_device_inside){
+		spawn_timer_current += 1;
+		if(spawn_timer_current >= spawn_timer_max){
+			spawnFinish();
+			exit;
+		}
+	}
+	else{
+		spawn_timer_current = 0;	
 	}
 }
 

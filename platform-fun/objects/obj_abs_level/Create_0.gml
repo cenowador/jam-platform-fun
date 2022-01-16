@@ -7,6 +7,8 @@ platform_medium_height = sprite_get_height(spr_gui_platform_medium_spawn)*platfo
 
 platform_small_xscale = 2;
 platform_small_yscale = 0.5;
+platform_small_width = sprite_get_width(spr_gui_platform_medium_spawn)*platform_small_xscale;
+platform_small_height = sprite_get_height(spr_gui_platform_medium_spawn)*platform_small_yscale;
 
 anvil_x = 60;
 anvil_y = 375;
@@ -34,6 +36,8 @@ spawn_timer_max = 1;
 spawn_timer_current = 0;
 spawn_device_inside = false;
 spawn_joint_position = 0;
+spawn_joint_x = 0;
+spawn_joint_y = 0;
 spawns = {
 	anvil: 0,
 	plat_medium: 1,
@@ -41,8 +45,29 @@ spawns = {
 }
 spawn_joint_positions = {
 	left: 0,
-	right: 1,
-	none: 2
+	center: 1,
+	right: 2,
+	none: 3
+}
+
+spawnCalculateJointPosition = function(){
+	spawn_joint_x = global.device_x;
+	spawn_joint_y = global.device_y;
+	var w = 0;
+	if(spawning == spawns.plat_medium){
+		w = platform_medium_width;
+	}
+	else if(spawning == spawns.plat_small){
+		w = platform_small_width;
+	}
+	if(spawn_joint_position == spawn_joint_positions.left){
+		spawn_joint_x += lengthdir_x(-w/2, spawn_angle);
+		spawn_joint_y += lengthdir_y(-w/2, spawn_angle);
+	}	
+	else if(spawn_joint_position == spawn_joint_positions.right){
+		spawn_joint_x += lengthdir_x(w/2, spawn_angle);
+		spawn_joint_y += lengthdir_y(w/2, spawn_angle);
+	}
 }
 
 spawnAnvil = function(){
@@ -72,11 +97,35 @@ spawnFinish = function(){
 	else if(spawning == spawns.plat_medium){
 		with(instance_create_layer(global.device_x, global.device_y, "Instances", obj_platform_wood_medium)){
 			phy_rotation = -other.spawn_angle;
+			image_angle = -phy_rotation;
+			if(other.spawn_joint_position != other.spawn_joint_positions.none){
+				if(physics_test_overlap(x, y, phy_rotation, obj_platform_wood)){
+					spawn_joint_position = other.spawn_joint_position;
+					with(instance_create_depth(other.spawn_joint_x, other.spawn_joint_y, depth-1, obj_joint_revolute)){
+						parent = other.id;
+						if(!weld()){
+							instance_destroy();	
+						}
+					}
+				}
+			}
 		}
 	}
 	else if(spawning == spawns.plat_small){
 		with(instance_create_layer(global.device_x, global.device_y, "Instances", obj_platform_wood_small)){
 			phy_rotation = -other.spawn_angle;
+			image_angle = -phy_rotation;
+			if(other.spawn_joint_position != other.spawn_joint_positions.none){
+				if(physics_test_overlap(x, y, phy_rotation, obj_platform_wood)){
+					spawn_joint_position = other.spawn_joint_position;
+					with(instance_create_depth(other.spawn_joint_x, other.spawn_joint_y, depth-1, obj_joint_revolute)){
+						parent = other.id;
+						if(!weld()){
+							instance_destroy();	
+						}
+					}
+				}
+			}
 		}
 	}
 	spawnCancel();

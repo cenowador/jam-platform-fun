@@ -30,17 +30,7 @@ if(spawning != noone){
 		draw_sprite_ext(spr_gui_negate, 0, sx, sy, 1, 1, 0, c_white, 1);	
 	}
 	//draw joint
-	else{
-		var jx = sx;
-		var jy = sy;
-		var polarPos = sqrt(sqr(platform_medium_width)+sqr(platform_medium_height));
-		var rad = degtorad(spawn_angle);
-		if(spawn_joint_position == spawn_joint_positions.left){
-			var arctg2M = arctan2(platform_medium_height, platform_medium_width*-1);
-			var arctg2N = arctan2(platform_medium_height*-1, platform_medium_width);
-			jx = jx + cos(arctg2M+rad)*polarPos/2;
-			jy = jy - sin(arctg2M+rad)*polarPos/2;
-			draw_sprite_ext(spr_joint_revolute, 0, jx, jy, 1, 1, 0, c_white, 0.5);
-		}
+	else if(spawn_joint_position != spawn_joint_positions.none){
+		draw_sprite_ext(spr_joint_revolute, 0, spawn_joint_x, spawn_joint_y, 1, 1, 0, c_white, 0.5);
 	}
 }
