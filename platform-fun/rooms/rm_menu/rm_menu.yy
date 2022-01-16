@@ -14,7 +14,7 @@
   ],
   "layers": [
     {"assets":[
-        {"spriteId":{"name":"spr_menu_logo","path":"sprites/spr_menu_logo/spr_menu_logo.yy",},"headPosition":0.0,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"animationSpeed":1.0,"colour":4294967295,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":620.0,"y":198.0,"resourceVersion":"1.0","name":"graphic_26C13DBA","tags":[],"resourceType":"GMRSpriteGraphic",},
+        {"spriteId":{"name":"spr_menu_logo","path":"sprites/spr_menu_logo/spr_menu_logo.yy",},"headPosition":0.0,"rotation":0.0,"scaleX":1.64583337,"scaleY":1.79166663,"animationSpeed":1.0,"colour":4294967295,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":641.5,"y":195.5,"resourceVersion":"1.0","name":"graphic_26C13DBA","tags":[],"resourceType":"GMRSpriteGraphic",},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Assets_1","tags":[],"resourceType":"GMRAssetLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_menu_button_level_select","path":"objects/obj_menu_button_level_select/obj_menu_button_level_select.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":640.0,"y":450.0,"resourceVersion":"1.0","name":"inst_17E2004F","tags":[],"resourceType":"GMRInstance",},

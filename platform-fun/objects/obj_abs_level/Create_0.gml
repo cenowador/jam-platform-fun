@@ -160,5 +160,5 @@ spawnFinish = function(){
 }
 
 confirmMenu = function(){
-	
+	room_change(rm_menu);
 }

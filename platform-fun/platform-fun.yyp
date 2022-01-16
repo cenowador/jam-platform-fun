@@ -7,6 +7,7 @@
     {"id":{"name":"scr_room","path":"scripts/scr_room/scr_room.yy",},"order":3,},
     {"id":{"name":"__shd_scribble_msdf","path":"shaders/__shd_scribble_msdf/__shd_scribble_msdf.yy",},"order":13,},
     {"id":{"name":"twerk_transitions_kernels_slide","path":"scripts/twerk_transitions_kernels_slide/twerk_transitions_kernels_slide.yy",},"order":7,},
+    {"id":{"name":"spr_gui_cursor","path":"sprites/spr_gui_cursor/spr_gui_cursor.yy",},"order":13,},
     {"id":{"name":"GMTwerk_ForEach","path":"scripts/GMTwerk_ForEach/GMTwerk_ForEach.yy",},"order":3,},
     {"id":{"name":"spr_menu_level_select_select_bg","path":"sprites/spr_menu_level_select_select_bg/spr_menu_level_select_select_bg.yy",},"order":0,},
     {"id":{"name":"scribble_font_bake_shader","path":"scripts/scribble_font_bake_shader/scribble_font_bake_shader.yy",},"order":1,},

@@ -14,8 +14,15 @@ if(saved_alpha > 0){
 }
 	
 //draw buttons
-draw_sprite(spr_gui_level_complete_next, 0, button_next_level_x, button_next_level_y);
-draw_sprite(spr_gui_level_complete_menu, 0, button_menu_x, button_menu_y);
+draw_sprite_ext(spr_gui_button, 0, button_next_level_x, button_next_level_y, button_next_level_xscale, button_next_level_yscale-0.1*hovering_next, 0, button_next_level_color, 1);
+draw_sprite_ext(spr_gui_button, 0, button_menu_x, button_menu_y, button_menu_xscale, button_menu_yscale-0.1*hovering_menu, 0, button_menu_color, 1);
+draw_set_color(c_black);
+draw_set_halign(fa_center);
+draw_set_valign(fa_center);
+draw_set_font(fnt_dotty22);
+draw_text(button_next_level_x+5, button_next_level_y, "PRÓXIMO");
+draw_text(button_menu_x, button_menu_y, "MENU");
+draw_set_valign(fa_top);
 	
 //draw text
 scribble("[wave][fnt_dotty32]["+color_red+"][fa_center]BOM TRABALHO!").draw(x, y-120);
