@@ -2,6 +2,8 @@
 
 randomize();
 
+gml_pragma("PNGCrush");
+
 //macros
 #macro color_red "#f02837"
 #macro color_red_rgb make_color_rgb(240, 40, 55)
