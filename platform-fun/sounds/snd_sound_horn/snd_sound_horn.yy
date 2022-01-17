@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_sound_horn.mp3",
-  "duration": 0.288,
+  "duration": 0.336,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
