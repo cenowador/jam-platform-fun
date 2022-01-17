@@ -1,6 +1,6 @@
 /// @description draw text
 
-draw_self();
+draw_sprite(sprite_index, checked, x, y);
 
 //draw text
 draw_set_font(fnt_dotty22);

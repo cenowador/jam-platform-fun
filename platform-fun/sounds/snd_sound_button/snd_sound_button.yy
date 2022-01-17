@@ -11,14 +11,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "spr_music.mp3",
-  "duration": 33.5934677,
+  "soundFile": "snd_sound_button.mp3",
+  "duration": 0.144,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_music",
+  "name": "snd_sound_button",
   "tags": [],
   "resourceType": "GMSound",
 }

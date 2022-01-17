@@ -11,14 +11,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "spr_sound_clapping.mp3",
+  "soundFile": "snd_sound_clapping.mp3",
   "duration": 7.752,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_sound_clapping",
+  "name": "snd_sound_clapping",
   "tags": [],
   "resourceType": "GMSound",
 }

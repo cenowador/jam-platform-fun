@@ -23,6 +23,7 @@ if(global.device_left_pressed){
 					available = (it <= level_current);	
 				}
 				if(available){
+					play_sound(snd_sound_button);
 					openLevel(it);
 					exit;
 				}
@@ -37,6 +38,7 @@ if(global.device_left_pressed){
 	//check if started playing level
 	if(level_open > 0){
 		if(level_open_button_play_hover){
+			play_sound(snd_sound_button);
 			playLevel(level_open);
 			exit;
 		}

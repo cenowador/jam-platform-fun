@@ -11,14 +11,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "spr_sound_button.mp3",
-  "duration": 0.144,
+  "soundFile": "snd_sound_squeak.mp3",
+  "duration": 0.36,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_sound_button",
+  "name": "snd_sound_squeak",
   "tags": [],
   "resourceType": "GMSound",
 }

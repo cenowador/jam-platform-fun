@@ -16,9 +16,12 @@ global.device_y <= button_next_level_y+button_next_level_h/2);
 
 if(global.device_left_pressed){
 	if(hovering_menu){
+		play_sound(snd_sound_button);
 		room_change(rm_menu);
 	}
 	else if(hovering_next){
+		play_sound(snd_sound_button);
+		audio_stop_sound(snd_sound_clapping);
 		level_next();
 		exit;
 	}

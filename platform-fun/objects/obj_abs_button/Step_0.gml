@@ -10,6 +10,7 @@ global.device_y <= y+sprite_height/2);
 
 if(hovering_me){
 	if(global.device_left_pressed){
-		clickedMe();	
+		clickedMe();
+		play_sound(snd_sound_button);
 	}
 }

@@ -94,15 +94,24 @@ if(spawning != noone){
 
 //get clicks
 if(global.device_left_pressed){
-	if(button_menu_hover)
+	if(button_menu_hover){
+		play_sound(snd_sound_button);
 		confirmMenu();
+	}
 	else if(button_restart_hover){
+		play_sound(snd_sound_button);
 		level_failed();
 	}
-	else if(anvil_hover)
+	else if(anvil_hover){
+		play_sound(snd_sound_button);
 		spawnAnvil();
-	else if(plat_medium_hover)
+	}
+	else if(plat_medium_hover){
+		play_sound(snd_sound_button);
 		spawnPlatMedium();
-	else if(plat_small_hover)
+	}
+	else if(plat_small_hover){
+		play_sound(snd_sound_button);
 		spawnPlatSmall();
+	}
 }

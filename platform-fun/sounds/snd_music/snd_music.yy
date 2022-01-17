@@ -11,14 +11,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "spr_sound_horn.mp3",
-  "duration": 0.288,
+  "soundFile": "snd_music.mp3",
+  "duration": 33.5934677,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_sound_horn",
+  "name": "snd_music",
   "tags": [],
   "resourceType": "GMSound",
 }

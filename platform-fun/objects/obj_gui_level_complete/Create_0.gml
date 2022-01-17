@@ -26,3 +26,5 @@ hovering_next = false;
 saved_alpha = 1;
 saved_alpha_reduce = false;
 alarm[0] = 2*room_speed;
+
+play_sound(snd_sound_clapping);

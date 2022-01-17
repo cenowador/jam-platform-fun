@@ -14,17 +14,21 @@ window_set_cursor(cr_none);
 scribble_font_add("fnt_dotty32");
 
 //global variables
-global.game_paused = false;
 global.camera = instance_create_depth(0, 0, depth, obj_camera);
+
 global.device_left_pressed = false;
 global.device_left_down = false;
 global.device_x = 0;
 global.device_y = 0;
-global.save_location = "save";
-global.options_music_on = true;
-global.options_sound_on = true;
-global.options_fullscreen = true;
 
+global.save_location = "save";
+global.game_paused = false;
+
+global.options_music_enabled = true;
+global.options_sound_enabled = true;
+global.options_fullscreen = window_get_fullscreen();
+
+global.sound_music = noone;
 
 //level data
 levels_stats = ds_map_create(); //["rm_num"]{panda:bool, kitten:bool, puppy:bool, time:int, deaths: int}
@@ -56,3 +60,5 @@ level_reset_stats = function(reset_timer=true, reset_failures=true){
 
 //check if there is a game saved
 load_game();
+
+play_music(snd_music);

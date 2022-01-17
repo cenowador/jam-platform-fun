@@ -62,6 +62,7 @@ if(!spawn){
 	keyboard_check_pressed(vk_up) ||
 	keyboard_check_pressed(ord("W")))){
 		physics_apply_force(x, y, 0, -physics_jump_impulse);
+		play_sound(snd_sound_horn);
 	}
 }
 else{
