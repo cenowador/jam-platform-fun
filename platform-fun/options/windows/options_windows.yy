@@ -1,5 +1,5 @@
 {
-  "option_windows_display_name": "Created with GameMaker Studio 2",
+  "option_windows_display_name": "Physics Circus",
   "option_windows_executable_name": "${project_name}.exe",
   "option_windows_version": "1.0.0.0",
   "option_windows_company_info": "YoYo Games Ltd",
@@ -28,7 +28,7 @@
   "option_windows_enable_steam": false,
   "option_windows_disable_sandbox": false,
   "option_windows_steam_use_alternative_launcher": false,
-  "option_windows_use_x64": false,
+  "option_windows_use_x64": true,
   "resourceVersion": "1.1",
   "name": "Windows",
   "tags": [],
